@@ -10,7 +10,7 @@ function getCredentials() {
 
     var blob = new Blob([text], { type: "text/plain;charset=utf-8" })
 
-    saveAs(f, "test.txt")
+    saveAs(blob, "test.txt")
 
     alert("The file has been created!")
 }
