@@ -1,15 +1,21 @@
-.user{
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background: #3e3e3e;
+    font-family: 'century gothic';
+    font-size:  1.2em;
+    color: white;
 
 }
-.psw{
 
+input[type=text], input[type=password] {
+    
 }
-.repeat_psw{
 
-}
-.submit{
-
-}
-.form{
-    border-style: solid;
+input[type=submit] {
+    
 }
