@@ -1,13 +1,16 @@
 function getCredentials() {
-    const user = document.querySelector('#user')
-    const psw = document.querySelector('#psw')
-    const repeat_psw = document.querySelector('#repeat_psw')
+    const user = document.querySelector('#user'), psw = document.querySelector('#psw'), repeat_psw = document.querySelector('#repeat_psw')
 
-    var credentials = user.value + "\n" + psw.value + "\n" + repeat_psw.value   
+    var credentials = {
+        user: user.value,
+        psw: psw.value,
+        repeat_psw: repeat_psw.value,
+        fileName: 'credentials.txt'
+    }
 
-    var blob = new Blob([credentials], { type: "text/plain;charset=utf-8" })
+    const blob = new Blob([`${credentials.user}\n${credentials.psw}\n${credentials.repeat_psw}`], { type: "text/plain;charset=utf-8" })
 
-    saveAs(blob, "test.txt")
+    saveAs(blob, credentials.fileName)
 
-    alert("The file has been created!")
+    alert("The  file has been created!")
 }
