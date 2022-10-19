@@ -5,21 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login page</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <script src="/JavaScript/JS-projects/Logging page/libraries/FileSaver.js"></script>
 </head>
 <body>
     <form class="form" onsubmit="getCredentials()">
+        <div class = user>
         <label for="user">Username</label>
         <input type="text" id="user" name="user" required>
-
+        </div>
+        <div class = psw>
         <label for="psw">Password</label>
         <input type="password" id="psw" name="pws">
+        </div>
         <!-- <input type="password" id="psw" name="psw" pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{5,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 5 or more characters" required> -->
+        <div class = repeat_psw>
         <label for="psw">Password_repeat</label>
         <input type="password" id="repeat_psw" name="repeat_psw" required>
-
+        </div>
+        <div class = submit>
         <input type="submit" value="Submit">
+        </div>
     </form>
 
     <script src="script.js"></script>
