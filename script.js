@@ -12,5 +12,5 @@ function getCredentials() {
 
     saveAs(blob, credentials.fileName)
 
-    alert("The  file has been created!")
+    alert("The file has been created, and will be download after closing this alert!")
 }
