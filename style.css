@@ -85,7 +85,7 @@ input[type=text], input[type=password] {
 
 input[type=submit] {
     background: rgba(80, 80, 80, 0.3);
-    box-shadow: 3px 5px 50px black;
+    box-shadow: 3px 5px 50px rgba(0, 0, 0, 0.6);
 
     font-size: 1em;
     color: white;
