@@ -83,16 +83,24 @@ input[type=text], input[type=password] {
     border-radius: 0.1em;
 }
 
+.submit {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+}
+
 input[type=submit] {
+    width: 70%;
+
     background: rgba(80, 80, 80, 0.3);
     box-shadow: 3px 5px 50px rgba(0, 0, 0, 0.6);
-
-    font-size: 1em;
-    color: white;
-    font-weight: bold;
     
     padding: 0.5em 2em;
+    margin:  1em auto;
     border: 5px solid white;
 
-    margin: 0 0 1em 0;
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
 }
