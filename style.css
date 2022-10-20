@@ -2,20 +2,49 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'century gothic';
 }
 
 body, html {
-    background: #3e3e3e;
-    font-family: 'century gothic';
-    font-size:  1.2em;
+    height: 100vh;
+    width: 100vw;
+
+    background: url('../supreme-garbanzo/images/bg.jpg') no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+    
+    font-size:  1.5em;
     color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    min-height: 80%;
+    width: 22.5em;
+
+    border-radius: 0.2em;
+    background: linear-gradient(80deg, rgba(139, 139, 139, 0.6), rgba(90, 90, 90, 0.336));
+    box-shadow: 7px 10px 61px black;
+}
+
+.header {
+    
+}
+
+.user, .psw, .repeat_psw {
 
 }
 
 input[type=text], input[type=password] {
-    
+    font-size: 0.7em;
+    padding: 0.2em 0 0.2em 0.1em;
 }
 
 input[type=submit] {
-    
+    font-size: 1em;
+    padding: 0.2em 0.5em;
 }
